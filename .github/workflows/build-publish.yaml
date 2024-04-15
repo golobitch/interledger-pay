@@ -54,7 +54,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/interledger-pay:${{ github.ref_name }}
+          tags: ghcr.io/${{ github.repository_owner }}/interledger-pay:${{ github.ref_name }},ghcr.io/${{ github.repository_owner }}/interledger-pay:latest
 
   generate-release:
     runs-on: ubuntu-latest
